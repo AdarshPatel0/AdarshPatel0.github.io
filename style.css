@@ -1,0 +1,70 @@
+body {
+	background-image: url("stars3.gif");
+	display: flex;
+	flex-direction: column;
+	height:100vh;
+}
+
+/* body p{
+	font-family: "Segoe UI", Arial, sans-serif;
+} */
+
+.heading {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+	width: fit-content;
+}
+
+.box {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	width: 500px;
+	background-image: url(bluenoise.gif);
+	background-color: #00000080;
+	padding: 10px;
+	border: 5px;
+	border-style: outset;
+	border-color: yellow;
+}
+
+.box p {
+	color: #cccccc;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.box1 {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	width: 800px;
+	background-image: url(slate.gif);
+	padding: 15px;
+}
+
+.link {
+	color: rgb(106, 248, 153);
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.sideimage {
+	display: block;
+	width: 100%;
+	max-width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.footer {
+	display: flex;
+	flex: 1;
+	gap: 5px;
+	justify-content: end;
+	align-items: flex-end;
+	left: 0;
+	right: 0;
+	width: 100%;
+}
