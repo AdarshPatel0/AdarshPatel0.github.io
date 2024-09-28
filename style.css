@@ -3,6 +3,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	height:100vh;
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 /* body p{
@@ -21,7 +22,7 @@ body {
 	margin-right: auto;
 	margin-top: 0px;
 	width: 500px;
-	background-image: url(bluenoise.gif);
+	background-image: url(/bluenoise.gif);
 	background-color: #00000080;
 	padding: 10px;
 	border: 5px;
@@ -30,6 +31,25 @@ body {
 }
 
 .box p {
+	color: #cccccc;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.largebox {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	width: 90%;
+	background-image: url(/bluenoise.gif);
+	background-color: #00000080;
+	padding: 10px;
+	border: 5px;
+	border-style: outset;
+	border-color: yellow;
+}
+
+.largebox p {
 	color: #cccccc;
 	margin-bottom: 0;
 	margin-top: 0;
