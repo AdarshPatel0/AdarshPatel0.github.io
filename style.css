@@ -58,10 +58,24 @@ body {
 .box1 {
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 10px;
 	width: 800px;
 	background-image: url(slate.gif);
 	padding: 15px;
+}
+
+.box2 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 800px;
+	background-color: #0a090c;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23332e3b' fill-opacity='0.85' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+	padding: 15px;
+	font-size: 20px;
+}
+
+.box2 p {
+	color: #cccccc;
+	font-style: italic;
 }
 
 .link {

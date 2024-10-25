@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>adarshpatel.qc.to</title>
+	<link rel="stylesheet" href="/style.css">
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+
+	<a href="https://adarshpatel.qc.to"><p style="font-style:italic; margin-left: 30px; margin-top: 20px; font-size: 32px; font-weight: bold; color: #9792c0;">
+		<u>adarshpatel.qc.to</u>
+	</p></a>
+
+
+	<div class="heading">
+		<p style="text-align: center; color: #9792c0; font-size: 32px; font-weight: bold; margin-bottom: 0px;">
+			Hex & Decimal Convertion
+		</p>
+	</div>
+	<table style="width: 100%; margin-left: auto; margin-right: auto;"></table>
+		<tr>
+			<td style="width: fit-content; vertical-align: top;">
+				<div class="largebox">
+					<div class="box2">
+						<p>
+							\[ Hexadecimal → Decimal \]
+							\[ \text{To convert from base } n \text{ to base to 10 use the following formula:} \]
+							\[\sum_{i=0}^{k} a_i \cdot n^i\]
+							\[i\text{ is the first base, where as } k \text{ is the last base. } a_i \text{ is the digit value as base } i.
+							\]
+							\[Example:\]
+							\[\text{Let's convert the hex number } A2F \text{ to decimal.}\]
+							\[\sum_{i=0}^{2} a_i \cdot 16^i =\]
+							\[((A→10) *16^2)+(2*16^1)+((F→15)*16^0)=\]
+							\[2,560 + 32 + 15=\]
+							\[2607\]
+						</p>
+					</div>
+				</div>
+				<br>
+				<div class="largebox">
+					<div class="box2">
+						<p>
+							\[ Decimal → Hexadecimal \]
+							\[ \text{To convert from base } 10 \text{ to base to 16 use the following method:} \]
+							\[Example:\]
+							\[\text{1. Take the modulo of }n:2607 ≡ 16 =15\]
+							\[\text{2. Take the floor of }\frac{n}{16}: \lfloor\frac{2607}{16}\rfloor = 162\]
+							\[\text{3. 15 is the last digit of the hex value, and 162 will be used to find the next base of the hex value.}\]
+							\[\begin{aligned}
+							2607 ≡ 16 = 15\\
+							\lfloor \frac{2607}{16} \rfloor = 162\\
+							162 ≡ 16 = 2\\
+							\lfloor \frac{162}{16} \rfloor = 10\\
+							10 ≡ 16 = 10\\
+							\end{aligned}\]
+							\[\text{10→A is the value of the first base, 2 is the second base & 15→F is the last base.}\]
+							\[2607 = A2F\]
+
+						</p>
+					</div>
+				</div>
+			</td>
+		</tr>
+	</table>
+	<div class="footer">
+		<a href="https://www.freebsd.org/">
+			<img src="/freeBSD.gif">
+		</a>
+	</div>
+</body>
+
+</html>
