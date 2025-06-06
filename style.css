@@ -1,0 +1,13 @@
+body{
+    background-image: url(https://bettysgraphics.neocities.org/images/backgrounds/stucco%205.jpg);
+}
+.header-link {
+    display: block;
+    color:black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size:larger;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+}
