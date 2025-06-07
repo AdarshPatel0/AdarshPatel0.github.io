@@ -5,7 +5,12 @@ body {
 
 p {
 	color: white;
-	font-family:'Courier New', Courier, monospace
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: bold;
+}
+
+pre {
+	font-family: 'Courier New', Courier, monospace;
 }
 
 .header-link {
