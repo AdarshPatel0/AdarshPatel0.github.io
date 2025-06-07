@@ -5,7 +5,7 @@ body {
 
 p {
 	color: white;
-	font-family: 'Courier New', Courier, monospace;
+	font-family:'Courier New', Courier, monospace
 }
 
 .header-link {
@@ -17,6 +17,7 @@ p {
 	padding-top: 20px;
 	padding-left: 20px;
 	text-decoration: none;
+	text-shadow: 0 0 20px rgba(0, 0, 0, .5);
 }
 
 .center-box {
@@ -25,7 +26,12 @@ p {
 	margin: 40px auto;
 	padding: 20px;
 	padding-top: 5px;
-	width: 80%;
+	width: 50%;
+	min-width: 475px;
 	border-radius: 5px;
 	box-shadow: 0 0 20px rgba(0, 0, 0, .6);
+}
+
+.bullet-link {
+	text-decoration-color: wheat;
 }
