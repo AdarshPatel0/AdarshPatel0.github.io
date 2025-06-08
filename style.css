@@ -1,42 +1,69 @@
 body {
-	background-image: url(https://bettysgraphics.neocities.org/images/backgrounds/stucco%205.jpg);
-	background-attachment: fixed;
+	background-color: #222129;
 }
 
 p {
 	color: white;
-	font-family: 'Courier New', Courier, monospace;
-	font-weight: bold;
+	font-family: 'Fira Code', monospace;
 }
 
 pre {
 	font-family: 'Courier New', Courier, monospace;
 }
 
-.header-link {
-	display: block;
-	color: black;
+li {
+	color: #a3be8c;
+}
+
+.header {
+	display: flex;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.header-logo {
+	display: flexbox;
+	color: #222129;
+	background-color: #81a1c1;
 	font-family: 'Courier New', Courier, monospace;
 	font-size: larger;
 	font-weight: bold;
-	padding-top: 20px;
-	padding-left: 20px;
 	text-decoration: none;
-	text-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.header-logo::before {
+	content: 'AdarshPatel.qc.to';
+}
+
+.header-filler {
+	background: repeating-linear-gradient(90deg, #81a1c1, #81a1c1 2px, transparent 0, transparent 12px);
+	width: 100%;
 }
 
 .center-box {
 	display: block;
-	background-color: rgba(30, 30, 30, 0.5);
 	margin: 40px auto;
 	padding: 20px;
 	padding-top: 5px;
 	width: 50%;
 	min-width: 475px;
-	border-radius: 5px;
-	box-shadow: 0 0 20px rgba(0, 0, 0, .6);
+	/* border-radius: 5px; */
+	border: #81a1c1;
+	border-style: solid;
+	border-width: 2px;
+	box-shadow: -20px 20px 0px #d08770;
 }
 
 .bullet-link {
-	text-decoration-color: wheat;
+	text-decoration-color: #a3be8c;
+	text-underline-offset: 10px;
+	text-decoration-line: underline;
+	text-decoration-thickness: 2px;
+	text-decoration-style: dashed;
+	color: #a3be8c;
 }
