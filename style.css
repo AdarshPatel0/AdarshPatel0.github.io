@@ -7,8 +7,17 @@ p {
 	font-family: 'Fira Code', monospace;
 }
 
+h1 {
+	color: white;
+	font-family: 'Fira Code', monospace;
+	font-size: larger;
+	font-weight: unset;
+	text-align: center;
+	margin-top: 20px;
+}
+
 pre {
-	font-family: 'Courier New', Courier, monospace;
+	font-family: 'Fira Code', monospace;
 }
 
 li {
@@ -60,10 +69,15 @@ li {
 }
 
 .bullet-link {
-	text-decoration-color: #a3be8c;
+	text-decoration-color: whi;
 	text-underline-offset: 10px;
 	text-decoration-line: underline;
 	text-decoration-thickness: 2px;
 	text-decoration-style: dashed;
 	color: #a3be8c;
+}
+
+.bullet-link:hover {
+	text-decoration-style: solid;
+	text-decoration-color: #a3be8c;
 }
