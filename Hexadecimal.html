@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="style.css">
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+	<div class="header">
+		<a class="header-logo" href="/"></a>
+		<div class="header-filler"></div>
+	</div>
+	<div class="center-box" style="min-width: 600px; max-width: none; width: 50%;">
+		<p>
+			\[ \text{Hexadecimal Representation Table} \]
+			\begin{array} {|r|r|}\hline
+			Decimal & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 \\ \hline
+			Hex & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & A & B & C & D & E & F \\ \hline
+			\end{array}
+		</p>
+	</div>
+	<div class="center-box" style="min-width: 600px; max-width: none; width: 50%;">
+		<p>
+			\[ Hexadecimal → Decimal \]
+			\[ \text{To convert from base } n \text{ to base to 10 use the following formula:} \]
+			\[\sum_{i=0}^{k} a_i \cdot n^i\]
+			\[i\text{ is the first base, where as } k \text{ is the last base. } a_i \text{ is the digit value as base }
+			i.
+			\]
+			\[Example:\]
+			\[\text{Let's convert the hex number } A2F \text{ to decimal.}\]
+			\[\sum_{i=0}^{2} a_i \cdot 16^i =\]
+			\[((A→10) *16^2)+(2*16^1)+((F→15)*16^0)=\]
+			\[2,560 + 32 + 15=\]
+			\[2607\]
+		</p>
+	</div>
+	<div class="center-box" style="min-width: 600px; max-width: none; width: 50%;">
+		<p>
+										\[ Decimal → Hexadecimal \]
+							\[ \text{To convert from base } 10 \text{ to base to 16 use the following method:} \]
+							\[Example:\]
+							\[\text{1. Take the modulo of }n:2607 ≡ 16 =15\]
+							\[\text{2. Take the floor of }\frac{n}{16}: \lfloor\frac{2607}{16}\rfloor = 162\]
+							\[\text{3. 15 is the last digit of the hex value, and 162 will be used to find the next base.}\]
+							\[\begin{aligned}
+							2607 ≡ 16 = 15\\
+							\lfloor \frac{2607}{16} \rfloor = 162\\
+							162 ≡ 16 = 2\\
+							\lfloor \frac{162}{16} \rfloor = 10\\
+							10 ≡ 16 = 10\\
+							\end{aligned}\]
+							\[\text{10→A is the value of the first base, 2 is the second base & 15→F is the last base.}\]
+							\[2607 = A2F\]
+		</p>
+	</div>
+</body>
+
+</html>
