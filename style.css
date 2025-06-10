@@ -31,7 +31,7 @@ li {
 	margin-right: 20px;
 }
 
-.header-logo {
+.header-link {
 	display: flexbox;
 	color: #222129;
 	background-color: #81a1c1;
@@ -43,15 +43,13 @@ li {
 	padding-right: 10px;
 	padding-top: 5px;
 	padding-bottom: 5px;
-}
-
-.header-logo::before {
-	content: 'AdarshPatel.qc.to';
+	width: fit-content;
+	white-space: nowrap;
 }
 
 .header-filler {
 	background: repeating-linear-gradient(110deg, #81a1c1, #81a1c1 6px, transparent 0, transparent 12px);
-	width: 100%;
+	width:100%;
 }
 
 .center-box {
@@ -79,4 +77,20 @@ li {
 .bullet-link:hover {
 	text-decoration-style: solid;
 	text-decoration-color: #a3be8c;
+}
+
+.post-title {
+	font-family: 'Fira Code', monospace;
+	font-size: 15px;
+	color: #a3be8c;
+	text-decoration: none;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.post-info {
+	font-family: 'Fira Code', monospace;
+	font-size: 14px;
+	color: #75728d;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
