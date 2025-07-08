@@ -1,3 +1,4 @@
+const space = document.getElementById("game-space");
 const boardModel = [];
 for (let i = 0; i < 3; i++) {
 	boardModel[i] = [];
@@ -11,25 +12,31 @@ const slotElements = [];
 const boardElement = document.createElement("div");
 boardElement.style.backgroundColor = "#000000";
 boardElement.style.display = "grid";
-boardElement.style.padding = "5px";
 boardElement.style.height = "360px";
 boardElement.style.width = "360px";
 boardElement.style.gridTemplateColumns = "repeat(3,1fr)";
 boardElement.style.gridTemplateRows = "repeat(3,1fr)";
-document.body.appendChild(boardElement);
+space.appendChild(boardElement);
 
 const messageElement = document.createElement("p");
 messageElement.style.width = "360px";
 messageElement.style.textAlign = "Center";
 messageElement.style.fontSize = "24px";
+messageElement.style.marginLeft = "auto";
+messageElement.style.marginRight = "auto";
 document.body.appendChild(messageElement);
 
-const resetElement = document.createElement("button");
-resetElement.style.width = "360px";
-resetElement.style.textAlign = "Center";
+const resetElement = document.createElement("p");
+resetElement.className = "center-box"
+resetElement.style.width = "180px";
+resetElement.style.textAlign = "center";
 resetElement.style.fontSize = "24px";
 resetElement.textContent = "Reset";
 resetElement.style.visibility = "hidden";
+resetElement.style.marginLeft = "auto";
+resetElement.style.marginRight = "auto";
+resetElement.style.minWidth = "0px";
+resetElement.style.boxShadow = "-10px 10px 0px #d08770";
 document.body.appendChild(resetElement);
 
 resetElement.addEventListener("click", function () {
@@ -113,9 +120,10 @@ function checkDiagonalB() {
 	let xCount = 0;
 	let oCount = 0;
 	for (let i = 0; i < 3; i++) {
-		if (boardModel[2 - i][2 - i] == "O") {
+		console.log(boardModel[2 - i][2 - i]);
+		if (boardModel[2 - i][i] == "O") {
 			oCount++;
-		} else if (boardModel[2 - i][2 - i] == "X") {
+		} else if (boardModel[2 - i][i] == "X") {
 			xCount++;
 		}
 	}
@@ -188,11 +196,12 @@ for (let i = 0; i < 3; i++) {
 		newSlot.style.display = "flex";
 		newSlot.style.justifyContent = "center";
 		newSlot.style.alignItems = "center";
-		newSlot.style.backgroundColor = "#ffffff";
+		newSlot.style.backgroundColor = "#222129";
 		newSlot.style.borderStyle = "solid";
-		newSlot.style.borderColor = "#000000";
+		newSlot.style.borderColor = "#81a1c1";
 		newSlot.style.borderWidth = "1px";
 		newSlot.style.fontSize = "48px";
+		newSlot.style.color = "#81a1c1"
 
 		boardElement.appendChild(newSlot);
 		slotElements[i][j] = newSlot
