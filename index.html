@@ -14,18 +14,19 @@
 			Welcome to my site
 		</h1>
 		<p>
-			Hello, my name is Adarsh Patel. I'm currently a third-year student at <a style="color: #bf616a;"> Queens
+			Hello, my name is Adarsh Patel. I'm currently a fourth-year student at <a style="color: #bf616a;"> Queens
 				College </a> (<a style="color: #5e81ac;">CUNY</a>), majoring in
 			Computer Science. I also work as a tutor for Queens College's <a class="inline-link"
 				href="https://qcseek.info/" style="color: #88c0d0;" target="_blank">SEEK</a> program. Feel free to reach
 			out
 			to me via
-			my public email. If you're contacting me about tutoring, please use my work email.
+			my personal email.
 		</p>
 		<p style="font-size: large; color: #b48ead;">
 			Contact information:
 		</p>
 		<p>
+			Personal Email: adarsh.patel0@outlook.com <br>
 			Work Email: Adarsh.Patel@qc.cuny.edu
 		</p>
 		<p style="font-size: large; color: #a3be8c;">
@@ -37,31 +38,16 @@
 					<p>UNIX Philosophy</p>
 				</a>
 			</li>
-			<li>
-				<a href="UsefulLinks.html" class="bullet-link">
-					<p>Useful Links</p>
-				</a>
-			</li>
 		</ul>
-	</div>
-	<div class="center-box" style="box-shadow: -20px 20px 0px #b48ead;">
-		<h1>
-			About this site
-		</h1>
-		<p>
-			This site was made in HTML and CSS and some JavaScript. For rendering LaTeX I used JavaScript library called
-			<a class="inline-link" style="color: #a3be8c;" href="https://www.mathjax.org/" target="_blank">MathJAX</a>.
-		</p>
 	</div>
 	<div class="center-box" style="box-shadow: -20px 20px 0px #a3be8c;">
 		<h1>
 			More about me
 		</h1>
 		<p>
-			Some of my interests lie in tech-related topics such as home labbing, POSIX systems like Linux and UNIX, and
-			programming in languages including C++, Java, Lua, Bash, and Intel x86 Assembly. My home lab runs on
-			<a class="inline-link" style="color: #bf616a;" href="https://www.freebsd.org/" target="_blank">FreeBSD</a>
-			and uses Jails to separate services such as Plex, Nginx, and a dedicated development environment.
+			My interest are in embedded systems and low-level programming as well as computer architecture.
+			The programming languages I primarily use are Rust, Java, C and C++.
+			I am currently focusing on building operating systems for RISC-V systems.
 		</p>
 	</div>
 	<div class="center-box" style="box-shadow: -20px 20px 0px #88c0d0;">
@@ -70,47 +56,20 @@
 		</h1>
 		<div>
 			<p>
-				Building a 16 bit RISC CPU:
+				Microkernel for the Sipeed LicheeRV Nano
 			</p>
 			<p>
-				I have recently taken and completed CSCI 343 Computer Architecture and have learned the workings of the MIPS CPU,
-				including pipelining, pathways, and assembly code.
-				While taking this course I have taken what I was learning in class and applied it to my own project of building a 16 bit CPU.
-				You can find my <a class="inline-link" style="color: #88c0d0"
-					href="https://github.com/AdarshPatel0/16-bit-RISC-CPU" target="_blank">project repository</a> linked here: 
-			</p>
-		</div>
-		<div>
-			<p>
-				Learning Rust:
+				I have developed a very simple microkernel for the Sipeed LicheeRV Nano microcontroller.
+				It contains drivers for accessing the onboard SDMMC and implements support for the Ext4 filesystem.
+				The <a class="inline-link" style="color: #88c0d0" href="https://github.com/AdarshPatel0/Virt-OS-RISCV64" target="_blank">source code</a> is available here.
 			</p>
 			<p>
-				I have build my first graphical application in the Rust programming language.
-				It is a simple calculator program that uses GTK for its graphical library.
-				Here is the link to the <a class="inline-link" style="color: #88c0d0"
-					href="https://github.com/AdarshPatel0/Rust-Calculator" target="_blank">project repository</a> on
-				Github.
-			</p>
-		</div>
-		<div>
-			<p>
-				Custom Email:
+				Building an operating system in Rust:
 			</p>
 			<p>
-				Using my own subdomain, I set up a public inbox with Zoho as the provider. I spent a day learning how to
-				configure DNS records—not just to get it working, but also to ensure that my emails are sent securely
-				and aren't automatically flagged as spam by other providers.
-			</p>
-		</div>
-		<div>
-			<p>
-				Rebuilding this website:
-			</p>
-			<p>
-				I originally created this website in July 2024, but as of June 2025, I've decided to rebuild it from
-				scratch. The main reason is that the original version was also my first attempt at building a website.
-				Needless to say, it turned out a bit ugly—though it did have a certain early-2000s charm. This time
-				around, my goal is to prioritize readability while also giving the site a cleaner, more modern look.
+				I built an operating system written in Rust that runs in a QEMU RISC-V virtual machine.
+				It implements multithreading with concurrency and parallelism along with a basic set of system calls for IO operations.
+				My operating systems source code is available at this <a class="inline-link" style="color: #88c0d0" href="https://github.com/AdarshPatel0/Virt-OS-RISCV64" target="_blank">project repository</a> and can be deployed as a dev container. 
 			</p>
 		</div>
 	</div>
