@@ -1,78 +1,73 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html>
-
-<head>
-	<link rel="stylesheet" href="style.css">
-	<script src="/script.js"></script>
-</head>
-
-<body>
-	<div id="header-placeholder"></div>
-	<div class="center-box">
-		<h1>
-			Welcome to my site
-		</h1>
-		<p>
-			Hello, my name is Adarsh Patel. I'm currently a fourth-year student at <a style="color: #bf616a;"> Queens
-				College </a> (<a style="color: #5e81ac;">CUNY</a>), majoring in
-			Computer Science. I also work as a tutor for Queens College's <a class="inline-link"
-				href="https://qcseek.info/" style="color: #88c0d0;" target="_blank">SEEK</a> program. Feel free to reach
-			out
-			to me via
-			my personal email.
-		</p>
-		<p style="font-size: large; color: #b48ead;">
-			Contact information:
-		</p>
-		<p>
-			Personal Email: adarsh.patel0@outlook.com <br>
-			Work Email: Adarsh.Patel@qc.cuny.edu
-		</p>
-		<p style="font-size: large; color: #a3be8c;">
-			Other pages:
-		</p>
-		<ul>
-			<li>
-				<a href="Philosophy.html" class="bullet-link">
-					<p>UNIX Philosophy</p>
-				</a>
-			</li>
-		</ul>
-	</div>
-	<div class="center-box" style="box-shadow: -20px 20px 0px #a3be8c;">
-		<h1>
-			More about me
-		</h1>
-		<p>
-			My interest are in embedded systems and low-level programming as well as computer architecture.
-			The programming languages I primarily use are Rust, Java, C and C++.
-			I am currently focusing on building operating systems for RISC-V systems.
-		</p>
-	</div>
-	<div class="center-box" style="box-shadow: -20px 20px 0px #88c0d0;">
-		<h1>
-			What am I up to recently
-		</h1>
-		<div>
-			<p>
-				Microkernel for the Sipeed LicheeRV Nano:
-			</p>
-			<p>
-				I have developed a very simple microkernel for the Sipeed LicheeRV Nano microcontroller.
-				It contains drivers for accessing the onboard SDMMC and implements support for the Ext4 filesystem.
-				The <a class="inline-link" style="color: #88c0d0" href="https://github.com/AdarshPatel0/Virt-OS-RISCV64" target="_blank">source code</a> is available here.
-			</p>
-			<p>
-				Building an operating system in Rust:
-			</p>
-			<p>
-				I built an operating system written in Rust that runs in a QEMU RISC-V virtual machine.
-				It implements multithreading with concurrency and parallelism along with a basic set of system calls for IO operations.
-				My operating systems source code is available at this <a class="inline-link" style="color: #88c0d0" href="https://github.com/AdarshPatel0/Virt-OS-RISCV64" target="_blank">project repository</a> and can be deployed as a dev container. 
-			</p>
-		</div>
-	</div>
-</body>
-
+  <head>
+    <meta charset="UTF-8">
+    <title>adarshpatel.nyc</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="favicon.ico" rel="icon" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <p id="home-link">
+        <a href="https://adarshpatel.nyc">AdarshPatel.nyc</a>
+      </p>
+      <p id="header-github-link">
+        <a href="https://github.com/AdarshPatel0">GitHub</a>
+      </p>
+      <div id="header-filler"></div>
+    </header>
+    <body>
+      <section id="welcome">
+        <h1>Welcome to my site</h1>
+        <p>
+          Hello, my name is Adarsh Patel. I'm currently a fourth-year student at
+          <span style="color: #bf616a">Queens College</span> (<span
+            style="color: #5e81ac"
+            >CUNY</span
+          >), majoring in Computer Science. I also work as a tutor for Queens
+          College's
+          <a href="https://qcseek.info/" target="_blank" style="color: #88c0d0"
+            >SEEK</a
+          >
+          program. Feel free to reach out to me via email.
+        </p>
+        <h2><span style="color: #b48ead">Contact information:</span></h2>
+        <address id="contact-info">
+          Email:
+          <a href="mailto:adarsh.patel0@outlook.com"
+            >adarsh.patel0@outlook.com</a
+          >
+        </address>
+      </section>
+      <section id="about-me">
+        <h1>More about me</h1>
+        <p>
+          My interests are in embedded systems and low-level programming as well
+          as computer architecture. The programming languages I primarily use
+          are Rust, Java, C and C++. I am also studying life insurance and
+          insurance underwriting.
+        </p>
+      </section>
+      <section id="recent">
+        <h1>What I am up to recently</h1>
+        <div>
+          <p>Building an operating system in Rust:</p>
+          <p>
+            I built an operating system written in Rust that runs in a QEMU
+            RISC-V virtual machine. It implements multithreading with
+            concurrency and parallelism along with a basic set of system calls
+            for IO operations. My operating systems source code is available at
+            this
+            <a
+              href="https://github.com/AdarshPatel0/Virt-OS-RISCV64"
+              target="_blank"
+              >project repository</a
+            >
+            and can be deployed as a dev container.
+          </p>
+        </div>
+      </section>
+    </body>
+    <footer></footer>
+  </body>
 </html>

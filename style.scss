@@ -1,0 +1,116 @@
+@use "nord.scss" as *;
+
+$background-color: #222129;
+$primary-color: $nord9;
+
+header {
+  display: flex;
+  margin: 10px;
+  margin-bottom: 50px;
+
+  p {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: $background-color;
+  }
+
+  #home-link {
+    background-color: $primary-color;
+  }
+
+  #header-github-link {
+    background-color: $nord11;
+  }
+
+  #header-filler {
+    background: repeating-linear-gradient(
+      90deg,
+      $primary-color 0,
+      $primary-color 6px,
+      transparent 0,
+      transparent 12px
+    );
+    margin-left: 6px;
+    width: 100%;
+  }
+}
+
+body {
+  background-color: $background-color;
+  margin: 0px;
+  
+  font-family: "Fira Code", monospace;
+  color: white;
+
+  section {
+    border: 2px solid $primary-color;
+    padding: 20px;
+    padding-top: 5px;
+    max-width: 575px;
+    margin: 40px auto;
+
+    section {
+      margin: 0;
+      border: 0;
+      padding: 0;
+      width: 100%;
+    }
+
+    h1 {
+      margin: 15px;
+      font-size: 18px;
+      font-weight: normal;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: normal;
+    }
+
+    address {
+      font-style: normal;
+      font-size: 16px;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    a {
+      text-decoration: underline;
+      text-decoration-style: dashed;
+      text-underline-offset: 5px;
+      text-decoration-thickness: 2px;
+      color: $nord8;
+    }
+
+    a:hover {
+      text-decoration-style: solid;
+    }
+  }
+
+  #welcome {
+    box-shadow: -20px 20px 0px $nord12;
+  }
+
+  #about-me {
+    box-shadow: -20px 20px 0px $nord14;
+  }
+
+  #recent {
+    box-shadow: -20px 20px 0px $nord15;
+  }
+}
